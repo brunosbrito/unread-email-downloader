@@ -53,9 +53,6 @@ Siga as instruções abaixo para rodar o projeto em seu ambiente local:
 
   Exemplo, ao consultar um arquivo chamado example.xml, a resposta será:
 
-   
-
-     ```bash 
             {
               "date":  "2024-05-22T02:48:04.989Z",
               "filename": "NFe.xml",
