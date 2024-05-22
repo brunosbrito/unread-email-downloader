@@ -31,11 +31,9 @@ Siga as instruções abaixo para rodar o projeto em seu ambiente local:
 
  - Para buscar os emails não lidos que contenham anexos .xml, siga as
    instruções abaixo: 
- - Tipo de Requisição: POST URL:
- - http://localhost:3000/getDocuments
+ - Tipo de Requisição: POST
+ - URL: http://localhost:3000/getDocuments
  - Corpo da Requisição (PAYLOAD)
-
-    
 
     ```bash
         {
@@ -48,8 +46,8 @@ Siga as instruções abaixo para rodar o projeto em seu ambiente local:
 **Consultar Informações do Documento por Nome de Arquivo**
 
  - Para consultar informações de um documento específico pelo nome do arquivo, utilize o seguinte endpoint: 
- - Tipo de Requisição: GET URL:
- - http://localhost:3000/getInfoDocument/{fileName}
+ - Tipo de Requisição: GET
+ - URL: http://localhost:3000/getInfoDocument/{fileName}
 
   Exemplo, ao consultar um arquivo chamado example.xml, a resposta será:
 
