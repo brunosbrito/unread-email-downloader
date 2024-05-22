@@ -119,7 +119,9 @@ export class EmailService {
         nomeEmitente: result.nfeProc.NFe[0].infNFe[0].emit[0].xNome[0],
         cnpjDestinatario: result.nfeProc.NFe[0].infNFe[0].dest[0].CNPJ[0],
         nomeDestinatario: result.nfeProc.NFe[0].infNFe[0].dest[0].xNome[0],
-        descricaoProdutos: result.nfeProc.NFe[0].infNFe[0].det.prod[0].xProd[0],
+        descricaoProdutos: result.nfeProc.NFe[0].infNFe[0].det.map(
+          (det) => det.prod[0].xProd[0],
+        ),
         pesoProduto: result.nfeProc.NFe[0].infNFe[0].det.map(
           (det) => det.prod[0].qCom[0],
         ),
