@@ -25,7 +25,7 @@ Siga as instruções abaixo para rodar o projeto em seu ambiente local:
 4. **Rode o Docker::**
     Use o Docker Compose para construir e iniciar os containers do projeto:
     ```bash
-        docker-compose up --build
+    docker-compose up --build
         
 ## Documentação
 **Buscar Emails Não Lidos com Anexos .xml**
