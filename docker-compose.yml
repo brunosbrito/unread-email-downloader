@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    restart: always
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/emails
+  mongodb:
+    image: mongo
+    ports:
+      - '27017:27017'
+    restart: always
